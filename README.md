@@ -1,100 +1,67 @@
-## Projects
+# 🔐 Hashing Algorithm Demonstration
 
-### 🤖 Virtual Assistant
-![Project Preview](https://via.placeholder.com/600x300)
+[![MIT License](https://img.shields.io/github/license/Finsa-SC/Hashing?color=green)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.10+-blue)](https://www.python.org/downloads/)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Finsa--SC%2FHashing-181717?logo=github)](https://github.com/Finsa-SC/Hashing)
 
-A comprehensive desktop assistant for Windows that helps automate daily tasks and boost productivity.
-
-**Technologies:** Python, Speech Recognition, NLP, Windows API
-**Features:**
-- Voice command recognition
-- Task automation
-- Calendar integration
-- Smart file management
-- Custom reminders
-
-[View Repository](https://github.com/Finsa-SC/Virtual-Assistans) | [Live Demo](#)
-
-### 🚀 GitHub Auto Uploader
-![Project Preview](https://via.placeholder.com/600x300)
-
-Streamlines the GitHub workflow by automating commits and uploads, perfect for continuous project updates.
-
-**Technologies:** Python, Git API, Task Scheduling
-**Features:**
-- Automated commit generation
-- Customizable upload schedules
-- Change detection
-- Configurable ignored files
-- Commit message templates
-
-[View Repository](https://github.com/Finsa-SC/-AutoGitHub-Uploader-) | [Documentation](#)
+A Python demonstration of various **hashing** and **password hashing** algorithms.  
+Supports both **text input** and **file-based hashing** (e.g., `example.txt`).  
+Perfect for cryptography beginners and developers who want to explore hashing techniques.
 
 ---
 
-## 📚 Education
-- **SMK [School Name]** - Software Engineering (Expected graduation: 2026)
-  - Relevant coursework: Database Systems, Object-Oriented Programming, Web Development
-  - School projects: [Project name] - A [brief description]
+## ✨ Features
+
+✅ Includes popular hash algorithms:
+
+- `bcrypt` (secure password hashing)
+- `scrypt` (memory-hard password hashing)
+- `Argon2` (modern, secure, memory-hard)
+- `BLAKE2b` (fast and secure)
+- `SHA1`, `SHA256`, `SHA3-512`
+- `MD5` (legacy, not secure for passwords)
+- `RIPEMD-160` (SHA alternative)
+- `Whirlpool` (512-bit hash)
+- `CRC32` & `FNV-1a` (non-cryptographic, fast)
+
+✅ Supports:
+- 🔤 Text/password hashing from input
+- 📄 File hashing (e.g., `example.txt`)
 
 ---
 
-## 🌱 Currently Learning
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white&logoWidth=40)
-![Cloud Computing](https://img.shields.io/badge/Cloud_Computing-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white&logoWidth=40)
-![Natural Language Processing](https://img.shields.io/badge/NLP-8A2BE2?style=for-the-badge&logo=nltk&logoColor=white&logoWidth=40)
+## 📦 Installation
 
----
+### 1. Clone the repository
 
-## 🧠 Skills Roadmap
-```mermaid
-graph TD
-    A[Current Skills] --> B[Short-term Goals]
-    A --> C[Mid-term Goals]
-    A --> D[Long-term Goals]
-    
-    B --> B1[Advanced PyTorch]
-    B --> B2[Docker & Kubernetes]
-    
-    C --> C1[Full-stack Development]
-    C --> C2[Cloud Architecture]
-    
-    D --> D1[AI Research]
-    D --> D2[Entrepreneurship]
+```bash
+git clone https://github.com/Finsa-SC/Hashing.git
+cd Hashing
 ```
 
----
+### 2. Install dependencies
+```bash
+pip install bcrypt argon2-cffi pycryptodome whirlpool-py
+```
 
-## 🎯 Hackathons & Events
-- **[Event Name]** - [Date] - [Achievement/Role]
-- **Local Code Jam** - [Date] - [Achievement/Role]
+## ▶️ How to Use
+Enter a string when prompted, and the program will display its hashes using multiple algorithms.
+If example.txt exists, the script will also compute its file hashes.
 
----
+#### ⚠️ Security Notes
+> ❌ Do not use MD5, SHA1, CRC32, or FNV for password storage.
+✅ Use bcrypt, scrypt, or Argon2 for secure password hashing.
+These are resistant to brute-force and rainbow table attacks.
 
-## 👨‍💻 Coding Activity
-[![Finsa's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=Finsa-SC&layout=compact&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
 
-![Profile Views](https://komarev.com/ghpvc/?username=Finsa-SC&color=blueviolet)
+## 📝 License
 
----
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 💼 Work Experience
-- **[Company/Organization Name]** - [Position] - [Duration]
-  - [Brief description of responsibilities and achievements]
+## 🤝 Contributions
+Pull requests and stars ⭐ are welcome!
+Original repository: Finsa-SC/Hashing
 
----
-
-## 🤝 Open to Collaborate On
-- AI and Machine Learning projects
-- Mobile app development
-- Open-source initiatives
-- Educational technology
-- Data visualization tools
-
----
-
-## ⚡ Fun Facts
-- Started coding at age [X]
-- Won [X] hackathons
-- Contributed to [X] open-source projects
-- Created [X] videos teaching programming concepts
+## 🧠 Author
+Developed by Finsa-SC
+Crafted with a passion for cryptography, Python, and clean code 🧪🔐
